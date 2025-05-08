@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" spellcheck="true">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,10 @@
     <h1 id="title">Formulário de Críticas do Campus Camboriú</h1>
     <h2>Conte o que você acha sobre o campus Camboriú</h2>
     <p>Com Suas Criticas Faremos o melhor para ajudar</p>
-    <fieldset>
-        <legend>Informações Pessoais</legend>
+    
         <form  id="survey-form"  method="POST" name="contact" netlify>
+            <fieldset>
+        <legend>Informações Pessoais</legend>
                <div id="form">
                 <p>Por favor, preencha o formulário com suas críticas e sugestões sobre o campus Camboriú</p>
                 <label for="name" id="name-label">Nome:</label>
@@ -21,11 +22,8 @@
                 <label for="email" id="email-label" >Email:</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu email" minlength="10" required>
                 <label for="age" id="age-label">Idade:</label>
-                <input type="age" id="age" name="age" min="10" max="120" placeholder="Digite sua Idade" required>
-                <label for="number" id="number-label">Telefone:</label>
-                <input type="tel" id="number" name="number" placeholder="Digite seu telefone" minlength="10" maxlength="11" required>
+                <input type="number" id="age" name="age" min="10" max="120" placeholder="Digite sua Idade" required>
                </div>
-                <legend>Informações Acadêmicas</legend>
                 <div id="academic">
                 <p>Por favor, preencha suas Informações Acadêmicas </p>
                 <label for="dropdown" id="dropdown-label">Qual o seu curso?</label>
@@ -36,21 +34,22 @@
                     <option value="Hospedagem">Hospedagem</option>
                     <option value="Controle Ambiental">Controle Ambiental</option>
                 </select> <br>
-              <div id="radio">
-                <label for="radio" id="radio-label">Você recomendaria o campus Camboriú?</label><br>
-                <input type="radio" name="recommend" value="Definitivamente" required>Definitivamente<br>
-                <input type="radio" name="recommend" value="Sim" required>Sim<br>
+              <div class="radios">
+                <label for="radios" id="radio-label">Você recomendaria o campus Camboriú?</label><br>
+                <input type="radio" id="radios" name="recommend" value="Definitivamente" required>Definitivamente<br>
+                <input type="radio"  name="recommend" value="Sim" required>Sim<br>
                 <input type="radio" name="recommend" value="Talvez" required>Talvez<br>
                 <input type="radio" name="recommend" value="Não" required>Não<br>
               </div>
-                <label for="text" id="text-label">O que você gostaria de ver melhorado?</label>
+                <label for="text-better" id="text-label">O que você gostaria de ver melhorado?</label>
                <textarea id="text-better" name="melhorias" placeholder="Digite aqui" minlength="20" maxlength="300" required></textarea>
             <button type="submit" id="submit" value="submit">Enviar</button>
-      </div>
-    </form>
+        </div>
     </fieldset>
-</body>
+    </form>
     <footer>
         <p>Este formulário é parte de um projeto do Grêmio Estudantil</p>
     </footer>
+</body>
+    
 </html>
