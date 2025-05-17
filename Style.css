@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-color: #393e3f;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+.Forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #2c2f30;
+    width: 97%;
+}
+span {
+    color: #ffffff;
+    size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+input[type="submit"] {
+    background-color: #313233;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 20%;
+    height: 60px;
+}
+#sugestao {
+    background-color: #2c2f30;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-size: large;
+}
+input[type="submit"]:hover {
+    background-color: #535353;
+    transition: background-color 0.7s ease;
+}
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 98%;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(255, 247, 247, 0.2);
+    background-color: #2c2f30;
+    color: #ffffff;
+    margin: 5px 0;
+    border: none;
+}
+input:hover {
+    background-color: #535353;
+    transition: background-color 0.7s ease;
+}
+footer {
+    background-color: #2c2f30;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+#sugestao:hover {
+    background-color: #535353;
+    transition: background-color 0.7s ease;
+}
+#anexo {
+    background-color: #2c2f30;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+    display: block;
+    margin: 0 auto;
+    font-size: large;
+    width: 30%;
+}
+#anexo:hover {
+    background-color: #535353;
+    transition: background-color 0.7s ease;
+}
