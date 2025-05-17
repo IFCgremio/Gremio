@@ -17,7 +17,10 @@
     <form id="survey-form" method="POST" name="contact" data-netlify="true">
         <div class="Forms">
         <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required placeholder="Nome e Sobrenome"><br><br>
+        <input type="text" id="nome" name="nome" minlength="10" required placeholder="Nome e Sobrenome"><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="text" id="idade" name="idade" required min="14" max="100" placeholder="Idade"><br><br>
         
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="10" title="Digite um email válido, por exemplo: exemplo@dominio.com"><br><br>
@@ -29,20 +32,17 @@
         <input type="text" id="turma" name="turma" required placeholder="Turma"><br><br>
 
         <label for="sugestao">Sugestão:</label><br>
-        <textarea id="sugestao" name="sugestao" rows="20" cols="130" required></textarea><br><br>
+        <textarea id="sugestao" name="sugestao" rows="20" cols="130" minlength="20" required></textarea><br><br>
 
         <p>Caso haja imagem, será mais fácil ajudarmos</p>
 
         <label for="anexo">Anexo:</label><br>
         <input type="file" id="anexo" name="anexo" accept=".jpg, .jpeg, .png, .pdf"><br><br>
 
-        <label for="idade">Idade:</label><br>
-        <input type="text" id="idade" name="idade" required placeholder="Idade"><br><br>
-
         <input type="submit" value="Enviar">
         </div>
     </form>
-<footer>
+    <footer>
         <p>Este formulário é parte de um projeto do Grêmio Estudantil</p>
     </footer>
 </body>
