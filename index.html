@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="https://elements-resized.envatousercontent.com/elements-video-cover-images/files/f0cb3588-e525-4ba9-90a1-acfa275dc6ee/inline_image_preview.jpg?w=1400&cf_fit=cover&q=85&format=auto&s=a5e7322045cb20dc38e04df3019e91e6b4565429037d4175f273ea1b69b46d22" type="image/x-icon">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
         <input type="text" id="nome" name="nome" minlength="10" required placeholder="Nome e Sobrenome"><br><br>
 
         <label for="idade">Idade:</label><br>
-        <input type="text" id="idade" name="idade" required min="14" max="100" placeholder="Idade"><br><br>
+        <input type="number" id="idade" name="idade" required min="14" max="100" placeholder="Idade"><br><br>
         
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="10" title="Digite um email válido, por exemplo: exemplo@dominio.com"><br><br>
@@ -32,7 +33,7 @@
         <input type="text" id="turma" name="turma" required placeholder="Turma"><br><br>
 
         <label for="sugestao">Sugestão:</label><br>
-        <textarea id="sugestao" name="sugestao" rows="20" cols="130" minlength="20" required></textarea><br><br>
+        <textarea id="sugestao" name="sugestao" rows="10" cols="50" minlength="20" required></textarea><br><br>
 
         <p>Caso haja imagem, será mais fácil ajudarmos</p>
 

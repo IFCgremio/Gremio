@@ -19,6 +19,7 @@ h3 {
     margin-top: 10px;
 }
 .Forms {
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +29,7 @@ h3 {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #2c2f30;
-    width: 97%;
+    background-color: #2c2f30; 
 }
 span {
     color: #ffffff;
@@ -74,21 +74,18 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 98%;
+    padding: 7px;
+    width: 75%;
     height: 40px;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(255, 247, 247, 0.2);
     background-color: #2c2f30;
     color: #ffffff;
-    margin: 5px 0;
     border: none;
 }
 input:hover {
     background-color: #535353;
-    transition: background-color 0.7s ease;
+    transition: background-color 0.3s ease;
 }
 footer {
     background-color: #2c2f30;
@@ -100,7 +97,7 @@ footer {
 }
 #sugestao:hover {
     background-color: #535353;
-    transition: background-color 0.7s ease;
+    transition: background-color 0.3s ease;
 }
 #anexo {
     background-color: #2c2f30;
